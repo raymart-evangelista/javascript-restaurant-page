@@ -1,0 +1,11 @@
+.image {
+  width: 33%;
+}
+
+.text {
+  color: red;
+}
+
+#content {
+  background: url('./food-image.jpg');
+}
