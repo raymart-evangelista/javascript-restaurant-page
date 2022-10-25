@@ -34,10 +34,12 @@ const menu = () => {
     
     const itemName = document.createElement('h2')
     itemName.classList = "text-xl text-sky-500 text-left"
+    itemName.tabIndex = 0
     itemName.textContent = key
 
     const itemDesc = document.createElement('h3')
     itemDesc.classList = "text-md text-sky-500"
+    itemDesc.tabIndex = 0
     itemDesc.textContent = value
 
     itemCard.appendChild(itemName)
@@ -49,10 +51,12 @@ const menu = () => {
 
     const itemCard = document.createElement('div')
     itemCard.classList = "m-4 p-4 xl:w-1/3 border-4 border-sky-500"
+    itemCard.tabIndex = 0
     content.appendChild(itemCard)
     
     const itemName = document.createElement('h2')
     itemName.classList = "text-xl text-sky-500 text-left"
+    itemName.tabIndex = 0
     itemName.textContent = key
 
     const itemDesc = document.createElement('h3')
