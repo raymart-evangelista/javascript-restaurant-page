@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _food_image_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./food-image.jpg */ \"./src/food-image.jpg\");\n\n\n\nconst pageLoad = () => {\n  console.log('page load function')\n\n  const content = document.getElementById(\"content\");\n\n  const myImage = new Image();\n  myImage.classList = \"image\"\n  myImage.src = _food_image_jpg__WEBPACK_IMPORTED_MODULE_1__;\n\n  content.appendChild(myImage);\n}\n\n\n\n//# sourceURL=webpack://javascript-restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _food_image_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./food-image.jpg */ \"./src/food-image.jpg\");\n/* harmony import */ var _poke_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./poke.jpg */ \"./src/poke.jpg\");\n\n\n\n\nconst pageLoad = () => {\n  // document.body.classList = \"bg-[url('./food-image.jpg')]\"\n  // document.body.classList = \"bg-[url('./poke.jpg')] w-1/2 h-1/2\"\n\n  const content = document.getElementById(\"content\")\n  // content.style = \"background-image: url('./food-image.jpg')\"\n  // content.classList = \"bg-scroll\"\n\n  const name = document.createElement('h1')\n  name.textContent = \"LA BOULANGERIA\"\n  name.classList = \"text-4xl text-blue-700\"\n  content.appendChild(name)\n\n  const desc = document.createElement('h2')\n  desc.textContent = \"FRENCH BAKERY & CAFE\"\n  desc.classList = \"text-xl text-blue-700\"\n  content.appendChild(desc)\n\n  const myImage = new Image();\n  myImage.classList = \"\"\n  myImage.src = _poke_jpg__WEBPACK_IMPORTED_MODULE_2__;\n\n  document.body.appendChild(myImage)\n  // document.body.appendChild(content)\n\n  // content.appendChild(myImage);\n}\n\n\n\n//# sourceURL=webpack://javascript-restaurant-page/./src/pageLoad.js?");
 
 /***/ }),
 
@@ -137,6 +137,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"817e39905e468eec7bf0.jpg\";\n\n//# sourceURL=webpack://javascript-restaurant-page/./src/food-image.jpg?");
+
+/***/ }),
+
+/***/ "./src/poke.jpg":
+/*!**********************!*\
+  !*** ./src/poke.jpg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3e62317d49f7b7625d5f.jpg\";\n\n//# sourceURL=webpack://javascript-restaurant-page/./src/poke.jpg?");
 
 /***/ })
 
