@@ -3,13 +3,9 @@ import './style.css'
 const menu = () => {
   const content = document.getElementById("content")
 
-  const nameCard = document.createElement('div')
-  nameCard.classList = "m-4 p-4 xl:w-1/3 border-4 border-sky-500"
-  content.appendChild(nameCard)
-
-  const breadCard = document.createElement('div')
-  breadCard.classList = "m-4 p-4 xl:w-1/3 border-4 border-sky-500"
-  content.appendChild(breadCard)
+  // const itemCard = document.createElement('div')
+  // itemCard.classList = "m-4 p-4 xl:w-1/3 border-4 border-sky-500"
+  // content.appendChild(itemCard)
 
   const bread = {
     'Jalapeno and Cheese': 'The peppers and swiss cheese gives this bread a provocative and spicy flavor.',
@@ -31,6 +27,40 @@ const menu = () => {
 
   for (const [key, value] of Object.entries(bread)) {
     console.log(`${key}: ${value}`);
+
+    const itemCard = document.createElement('div')
+    itemCard.classList = "m-4 p-4 xl:w-1/3 border-4 border-sky-500"
+    content.appendChild(itemCard)
+    
+    const itemName = document.createElement('h2')
+    itemName.classList = "text-xl text-sky-500 text-left"
+    itemName.textContent = key
+
+    const itemDesc = document.createElement('h3')
+    itemDesc.classList = "text-md text-sky-500"
+    itemDesc.textContent = value
+
+    itemCard.appendChild(itemName)
+    itemCard.appendChild(itemDesc)
+  }
+
+  for (const [key, value] of Object.entries(pastries)) {
+    console.log(`${key}: ${value}`);
+
+    const itemCard = document.createElement('div')
+    itemCard.classList = "m-4 p-4 xl:w-1/3 border-4 border-sky-500"
+    content.appendChild(itemCard)
+    
+    const itemName = document.createElement('h2')
+    itemName.classList = "text-xl text-sky-500 text-left"
+    itemName.textContent = key
+
+    const itemDesc = document.createElement('h3')
+    itemDesc.classList = "text-md text-sky-500"
+    itemDesc.textContent = value
+
+    itemCard.appendChild(itemName)
+    itemCard.appendChild(itemDesc)
   }
 }
 
