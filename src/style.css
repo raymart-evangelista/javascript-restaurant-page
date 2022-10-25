@@ -1,5 +1,7 @@
 .image {
-  width: 33%;
+  background: url('./food-image.jpg');
+  width: 100vw;
+  height: 50vh;
 }
 
 .text {
@@ -7,5 +9,6 @@
 }
 
 #content {
-  background: url('./food-image.jpg');
+  width: 100vw;
+  height: 100vh;
 }
