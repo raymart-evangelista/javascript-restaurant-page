@@ -20,31 +20,7 @@ function loadEventListeners() {
 }
 
 window.onload = () => {
-  // header()
-  // home()
   console.log("window")
-
-  // document.getElementById("home").onclick = () => {
-  //   console.log("HERE")
-  //   removeChildren()
-  //   header()
-  //   home()
-  // }
-
-  // document.getElementById("menu").onclick = function(){
-  //   console.log("HERE2")
-  //   removeChildren()
-  //   header()
-  //   menu()
-  // }
-
-  // document.getElementById("contact").onclick = function(){
-  //   console.log("HERE3")
-  //   removeChildren()
-  //   header()
-  //   contact()
-  // }
-
   loadEventListeners()
 }
 
